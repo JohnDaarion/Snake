@@ -1,8 +1,2 @@
-src/ConsoleSnake/bin
-src/ConsoleSnake/obj
-
-src/Engine/bin
-src/Engine/obj
-
-test/EngineUnitTests/bin
-test/EngineUnitTests/obj
+[Bb]in/
+[Oo]bj/

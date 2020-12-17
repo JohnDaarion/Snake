@@ -10,7 +10,7 @@ namespace Engine
     {
         private readonly Point _mapMinSize;
         private readonly Point _mapMaxSize;
-        private readonly Random random = new Random();
+        private readonly Random _random = new Random();
         private Point _currentFood;
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace Engine
             Point point;
             while (true)
             {
-                point = new Point(random.Next(_mapMinSize.X + 1, _mapMaxSize.X + 1), random.Next(_mapMinSize.Y + 1, _mapMaxSize.Y + 1));
+                point = new Point(_random.Next(_mapMinSize.X + 1, _mapMaxSize.X + 1), _random.Next(_mapMinSize.Y + 1, _mapMaxSize.Y + 1));
                 if (!forbiddenLocations.Contains(point))
                     break;
             }

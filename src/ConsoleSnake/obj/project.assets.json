@@ -187,11 +187,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Snake\\src\\ConsoleSnake\\ConsoleSnake.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\ConsoleSnake\\ConsoleSnake.csproj",
       "projectName": "ConsoleSnake",
-      "projectPath": "C:\\Users\\PC\\source\\repos\\Snake\\src\\ConsoleSnake\\ConsoleSnake.csproj",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\ConsoleSnake\\ConsoleSnake.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\source\\repos\\Snake\\src\\ConsoleSnake\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\ConsoleSnake\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -212,8 +212,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\PC\\source\\repos\\Snake\\src\\Engine\\Engine.csproj": {
-              "projectPath": "C:\\Users\\PC\\source\\repos\\Snake\\src\\Engine\\Engine.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\Engine\\Engine.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\Engine\\Engine.csproj"
             }
           }
         }

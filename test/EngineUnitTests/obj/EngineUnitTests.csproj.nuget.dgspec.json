@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\source\\repos\\Snake\\test\\EngineUnitTests\\EngineUnitTests.csproj": {}
+    "C:\\Users\\PC\\Documents\\GitHub\\Snake\\test\\EngineUnitTests\\EngineUnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\source\\repos\\Snake\\src\\Engine\\Engine.csproj": {
+    "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\Engine\\Engine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Snake\\src\\Engine\\Engine.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\Engine\\Engine.csproj",
         "projectName": "Engine",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\Snake\\src\\Engine\\Engine.csproj",
+        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\Engine\\Engine.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\source\\repos\\Snake\\src\\Engine\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\Engine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\PC\\source\\repos\\Snake\\test\\EngineUnitTests\\EngineUnitTests.csproj": {
+    "C:\\Users\\PC\\Documents\\GitHub\\Snake\\test\\EngineUnitTests\\EngineUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Snake\\test\\EngineUnitTests\\EngineUnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\test\\EngineUnitTests\\EngineUnitTests.csproj",
         "projectName": "EngineUnitTests",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\Snake\\test\\EngineUnitTests\\EngineUnitTests.csproj",
+        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\test\\EngineUnitTests\\EngineUnitTests.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\source\\repos\\Snake\\test\\EngineUnitTests\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\test\\EngineUnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -95,8 +95,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\PC\\source\\repos\\Snake\\src\\Engine\\Engine.csproj": {
-                "projectPath": "C:\\Users\\PC\\source\\repos\\Snake\\src\\Engine\\Engine.csproj"
+              "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\Engine\\Engine.csproj": {
+                "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Snake\\src\\Engine\\Engine.csproj"
               }
             }
           }

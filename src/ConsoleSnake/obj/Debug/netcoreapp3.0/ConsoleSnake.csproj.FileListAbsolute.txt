@@ -1,0 +1,16 @@
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\bin\Debug\netcoreapp3.0\ConsoleSnake.exe
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\bin\Debug\netcoreapp3.0\ConsoleSnake.deps.json
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\bin\Debug\netcoreapp3.0\ConsoleSnake.runtimeconfig.json
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\bin\Debug\netcoreapp3.0\ConsoleSnake.runtimeconfig.dev.json
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\bin\Debug\netcoreapp3.0\ConsoleSnake.dll
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\bin\Debug\netcoreapp3.0\ConsoleSnake.pdb
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\bin\Debug\netcoreapp3.0\Engine.dll
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\bin\Debug\netcoreapp3.0\Engine.pdb
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\obj\Debug\netcoreapp3.0\ConsoleSnake.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\obj\Debug\netcoreapp3.0\ConsoleSnake.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\obj\Debug\netcoreapp3.0\ConsoleSnake.AssemblyInfo.cs
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\obj\Debug\netcoreapp3.0\ConsoleSnake.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\obj\Debug\netcoreapp3.0\ConsoleSnake.csproj.CopyComplete
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\obj\Debug\netcoreapp3.0\ConsoleSnake.dll
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\obj\Debug\netcoreapp3.0\ConsoleSnake.pdb
+C:\Users\PC\source\repos\Snake\src\ConsoleSnake\obj\Debug\netcoreapp3.0\ConsoleSnake.genruntimeconfig.cache

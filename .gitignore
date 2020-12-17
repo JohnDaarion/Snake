@@ -1,0 +1,4 @@
+src/ConsoleSnake/bin
+src/Engine/bin
+
+test/EngineUnitTests/bin

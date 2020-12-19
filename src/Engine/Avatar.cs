@@ -20,37 +20,29 @@ namespace Engine
         /// <param name="startingPoint">Avatar's starting point</param>
         /// <param name="startingDirection">Avatar's starting position</param>
         /// <param name="step">How big step should be (in fields)</param>
-        public Avatar(Point startingPoint, Direction startingDirection, int step = 1) {
+        public Avatar(Point startingPoint, Direction startingDirection, int step = 1) 
+        {
             _step = step;
             _body.Add(startingPoint);
             _currentDirection = startingDirection;
         }
 
         ///<inheritdoc/>
-        public Point Move(Direction? direction) {
+        public Point Move(Direction? direction) 
+        {
             Point current = _body.Last();
 
             if (direction == null || (direction.Value.IsDirectionOpposite(_currentDirection) && _body.Count != 1))
                 direction = _currentDirection;
 
-            switch (direction)
+            _currentPoint = direction switch
             {
-                case Direction.Up:
-                    _currentPoint = new Point(current.X, current.Y - _step);
-                    break;
-                case Direction.Down:
-                    _currentPoint = new Point (current.X, current.Y + _step);
-                    break;
-                case Direction.Left:
-                    _currentPoint = new Point (current.X - _step, current.Y);
-                    break;
-                case Direction.Right:
-                    _currentPoint = new Point (current.X + _step, current.Y);
-                    break;
-                default:
-                    _currentPoint = current;
-                    break;
-            }
+                Direction.Up => new Point(current.X, current.Y - _step),
+                Direction.Down => new Point(current.X, current.Y + _step),
+                Direction.Left => new Point(current.X - _step, current.Y),
+                Direction.Right => new Point(current.X + _step, current.Y),
+                _ => current
+            };
 
             _currentDirection = direction.Value;
             return _currentPoint;
@@ -71,7 +63,7 @@ namespace Engine
         }
 
         ///<inheritdoc/>
-        public List<Point> GetBody()
+        public List<Point> Body()
         {
             return _body;
         }

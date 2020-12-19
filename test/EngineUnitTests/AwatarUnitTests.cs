@@ -14,12 +14,15 @@ namespace EngineUnitTests
             var point = new Point(1, 1);
             var awatar = new Avatar(point, Direction.Down);
 
-            var body = awatar.GetBody();
+            var body = awatar.Body();
             var resultCount = body.Count;
             var resultContains = body.Contains(point);
 
-            Assert.AreEqual(1, resultCount);
-            Assert.IsTrue(resultContains);
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual(1, resultCount);
+                Assert.IsTrue(resultContains);
+            });
         }
 
         [Test]
@@ -30,12 +33,15 @@ namespace EngineUnitTests
 
             awatar.Move(direction);
             awatar.SaveLastMove(false);
-            var body = awatar.GetBody();
+            var body = awatar.Body();
             var resultCount = body.Count;
             var resultContains = body.Contains(new Point(1, 2));
 
-            Assert.AreEqual(1, resultCount);
-            Assert.IsTrue(resultContains);
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual(1, resultCount);
+                Assert.IsTrue(resultContains);
+            });
         }
 
         [Test]
@@ -51,12 +57,15 @@ namespace EngineUnitTests
 
             awatar.Move(direction);
             awatar.SaveLastMove(true);
-            var body = awatar.GetBody();
+            var body = awatar.Body();
             var resultCount = body.Count;
             var resultContains = body.TrueForAll(x => predicted.Contains(x));
 
-            Assert.AreEqual(2, resultCount);
-            Assert.IsTrue(resultContains);
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual(2, resultCount);
+                Assert.IsTrue(resultContains);
+            });
         }
 
         [Test]

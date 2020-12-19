@@ -16,6 +16,7 @@ namespace EngineUnitTests
         private IMap _map;
         private IDownloader _downloader;
         private Action _callback;
+        private Action _downloaded;
 
         [OneTimeSetUp]
         public void OneTimeSetup()
@@ -24,12 +25,13 @@ namespace EngineUnitTests
             _map = Substitute.For<IMap>();
             _downloader = Substitute.For<IDownloader>();
             _callback = Substitute.For<Action>();
+            _downloaded = Substitute.For<Action>();
         }
 
         [SetUp]
         public void Setup()
         {
-            _game = new Game(_avatar, _map, _downloader, _callback);
+            _game = new Game(_avatar, _map, _downloader, _callback, _downloaded);
         }
 
         [Test]
@@ -75,15 +77,18 @@ namespace EngineUnitTests
             _game.SetDirection(directionA);
             var result = _game.CurrentDirection;
 
-            Assert.AreNotEqual(directionA, result);
-            Assert.AreEqual(directionB, result);
+            Assert.Multiple(() =>
+            {
+                Assert.AreNotEqual(directionA, result);
+                Assert.AreEqual(directionB, result);
+            });
         }
 
         [Test]
         public void GetView_CorrectData_AsPredicted()
         {
             var awatar = Substitute.For<IAvatar>();
-            awatar.GetBody().ReturnsForAnyArgs(new List<Point> { new Point(1,1) });
+            awatar.Body().ReturnsForAnyArgs(new List<Point> { new Point(1,1) });
             var mapPoints = new List<Point>
             {
                 new Point(0,0),
@@ -100,10 +105,10 @@ namespace EngineUnitTests
                 new Point(2,3)
             };
             var map = Substitute.For<IMap>();
-            map.GetMap().ReturnsForAnyArgs(mapPoints);
-            map.GetFood().ReturnsForAnyArgs(new Point(2, 2));
+            map.Points().ReturnsForAnyArgs(mapPoints);
+            map.Food().ReturnsForAnyArgs(new Point(2, 2));
 
-            var game = new Game(awatar, map, _downloader, _callback);
+            var game = new Game(awatar, map, _downloader, _callback, _downloaded);
 
             var predicted = new FieldType[4, 4];
             predicted[0, 0] = FieldType.Wall;
@@ -133,8 +138,11 @@ namespace EngineUnitTests
                 }
             }
 
-            Assert.AreEqual(predicted.Length, view.Length);
-            Assert.IsTrue(result);
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual(predicted.Length, view.Length);
+                Assert.IsTrue(result);
+            });
         }
     }
 }

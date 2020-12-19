@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
 using Engine;
 using NUnit.Framework;
@@ -74,7 +73,7 @@ namespace EngineUnitTests
                 new Point(2,2),
             };
 
-            var mapPoints = map.GetMap();
+            var mapPoints = map.Points();
             var result = predicted.TrueForAll(x => mapPoints.Contains(x));
 
             Assert.IsTrue(result);
@@ -86,7 +85,7 @@ namespace EngineUnitTests
             var map = new Map(1, 1);
             var predicted = new Point(1, 1);
 
-            var mapPoints = map.GetMap();
+            var mapPoints = map.Points();
             var result = mapPoints.Contains(predicted);
 
             Assert.IsFalse(result);

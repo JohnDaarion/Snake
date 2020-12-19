@@ -51,13 +51,13 @@ namespace Engine
         }
 
         ///<inheritdoc/>
-        public Point GetFood()
+        public Point Food()
         {
             return _currentFood;
         }
 
         ///<inheritdoc/>
-        public List<Point> GetMap()
+        public List<Point> Points()
         {
             var result = new List<Point>();
             for (var i = _mapMinSize.X; i <= _mapMaxSize.X + 1; i++)

@@ -35,12 +35,12 @@ namespace Engine.Abstractions
         /// Get current food's location
         /// </summary>
         /// <returns>Current food's location</returns>
-        Point GetFood();
+        Point Food();
 
         /// <summary>
         /// Gets list of map points
         /// </summary>
         /// <returns>List of map points</returns>
-        List<Point> GetMap();
+        List<Point> Points();
     }
 }

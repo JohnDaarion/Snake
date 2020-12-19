@@ -24,7 +24,7 @@ namespace ConsoleSnake
         static void Main(string[] args)
         {
             Console.CursorVisible = false;
-            Console.SetWindowSize((xMapSize + 2) * 2, yMapSize + 10);
+            Console.SetWindowSize((xMapSize + 70) * 2, yMapSize + 10);
             NewGame();
             Show();
             ConsoleKeyInfo key = new ConsoleKeyInfo();
@@ -68,13 +68,13 @@ namespace ConsoleSnake
         }
         private static void PrintMap()
         {
-            var map = game.GetMap();
+            var map = game.Map();
             map.ForEach(point => { Console.SetCursorPosition(point.X * 2, point.Y); Console.Write(wallSymbol); });
         }
 
         private static void PrintFood()
         {
-            var food = game.GetFood();
+            var food = game.Food();
             Console.SetCursorPosition(food.X * 2, food.Y);
             Console.Write(foodSymbol);
         }
@@ -86,7 +86,7 @@ namespace ConsoleSnake
                 Console.SetCursorPosition(lastPoint.X * 2, lastPoint.Y);
                 Console.Write(backgroundSymbol);
             }
-            var body = game.GetBody();
+            var body = game.Body();
             body.ForEach(point => { Console.SetCursorPosition(point.X * 2, point.Y); Console.Write(bodySymbol); });
             lastPoint = body.First();
         }
@@ -96,8 +96,19 @@ namespace ConsoleSnake
             Console.Clear();
             var map = new Map(xMapSize, yMapSize);
             var awatar = new Avatar(new Point(10, 10), Direction.Down);
-            game = new Game(awatar, map, downloader, () => Show());
+            game = new Game(awatar, map, downloader, () => Show(), () => Downloaded());
             PrintMap();
+        }
+
+        private static void Downloaded()
+        {
+            int i = 0;
+            
+            game.Downloaded.ToList().ForEach(x => 
+            {
+                Console.SetCursorPosition(xMapSize * 2 + 5, i++);
+                Console.Write(x);
+            });
         }
 
         private static void Show()

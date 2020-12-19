@@ -6,3 +6,4 @@ C:\Users\PC\Documents\GitHub\Snake\src\Engine\obj\Debug\netstandard2.1\Engine.As
 C:\Users\PC\Documents\GitHub\Snake\src\Engine\obj\Debug\netstandard2.1\Engine.csproj.CoreCompileInputs.cache
 C:\Users\PC\Documents\GitHub\Snake\src\Engine\obj\Debug\netstandard2.1\Engine.dll
 C:\Users\PC\Documents\GitHub\Snake\src\Engine\obj\Debug\netstandard2.1\Engine.pdb
+C:\Users\PC\Documents\GitHub\Snake\src\Engine\obj\Debug\netstandard2.1\Engine.csprojAssemblyReference.cache

@@ -32,6 +32,6 @@ namespace Engine.Abstractions
         /// Get body points
         /// </summary>
         /// <returns>Body points</returns>
-        List<Point> GetBody();
+        List<Point> Body();
     }
 }
